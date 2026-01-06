@@ -6,7 +6,7 @@ from src.utils import (calculate_cards, get_currency_rates, get_greeting, get_st
 
 
 def structure_data(in_date: str) -> str:
-    """Функция для страницы "Главная" """
+    """Функция для страницы "Главная" на вход дата в формате YYYY-MM-DD HH:MM:SS"""
     df = read_excel_by_date(r"C:\Users\Kirill\Desktop\Learning\coursework_1\data\operations.xlsx", in_date)
     ud = read_json(r"C:\Users\Kirill\Desktop\Learning\coursework_1\data\user_settings.json")
     data = {
@@ -18,3 +18,6 @@ def structure_data(in_date: str) -> str:
     }
     json_data = json.dumps(data, ensure_ascii=False, indent=2)
     return json_data
+
+print(structure_data("2020-01-19 10:50:55"))
+
