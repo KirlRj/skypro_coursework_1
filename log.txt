@@ -101,3 +101,95 @@
 2026-01-07 13:51:15,815 - src.utils - INFO - Цена акции GOOGL получена
 2026-01-07 13:51:19,087 - src.utils - INFO - Цена акции TEST12345 отсутствует
 2026-01-07 13:51:19,087 - src.utils - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-07 14:12:32,595 - src.utils - INFO - Запуск функции read_excel_by_date 
+2026-01-07 14:12:32,595 - src.utils - INFO - Чтение данных из excel файла...
+2026-01-07 14:12:32,596 - src.utils - ERROR - Ошибка чтения Excel. Функция завершена с ошибкой
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\src\utils.py", line 50, in read_excel_by_date
+    excel_data = pd.read_excel(file_path, sheet_name=sheet_name)
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1509, in __init__
+    ext = inspect_excel_format(content_or_path=path_or_buffer, storage_options=storage_options)
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1365, in inspect_excel_format
+    with get_handle(content_or_path, "rb", storage_options=storage_options, is_text=False) as handle:
+         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\.venv\Lib\site-packages\pandas\io\common.py", line 838, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\operations.xlsx'
+2026-01-07 14:15:11,846 - src.utils - INFO - Запуск функции read_excel_by_date 
+2026-01-07 14:15:11,847 - src.utils - INFO - Чтение данных из excel файла...
+2026-01-07 14:15:12,401 - src.utils - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-07 14:15:12,401 - src.utils - INFO - Запуск функции tread_json
+2026-01-07 14:15:12,401 - src.utils - INFO - Чтение json файла... 
+2026-01-07 14:15:12,401 - src.utils - INFO - Работа функции read_json завершена без ошибок.
+2026-01-07 14:15:12,401 - src.utils - INFO - Запуск функции get_greeting 
+2026-01-07 14:15:12,401 - src.utils - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-07 14:15:12,402 - src.utils - INFO - Запуск функции calculate_cards
+2026-01-07 14:15:12,402 - src.utils - INFO - Фильтрация данных...
+2026-01-07 14:15:12,402 - src.utils - INFO - Работа функции calculate_cards завершена без ошибок.
+2026-01-07 14:15:12,402 - src.utils - INFO - Запуск функции top_transaction
+2026-01-07 14:15:12,403 - src.utils - INFO - Фильтрация данных...
+2026-01-07 14:15:12,403 - src.utils - INFO - Работа функции top_transactions завершена без ошибок.
+2026-01-07 14:15:12,403 - src.utils - INFO - Запуск функции get_currency_rates
+2026-01-07 14:15:12,404 - src.utils - INFO - Отправка API запроса...
+2026-01-07 14:15:15,855 - src.utils - INFO - Данные валют USD,EUR,CNY получены
+2026-01-07 14:15:15,855 - src.utils - INFO - Фильтрация данных...
+2026-01-07 14:15:15,855 - src.utils - INFO - Работа функции get_currency_rates завершена без ошибок.
+2026-01-07 14:15:15,858 - src.utils - INFO - Запуск функции get_stock_price
+2026-01-07 14:15:15,858 - src.utils - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-07 14:15:18,830 - src.utils - INFO - Цена акции AAPL получена
+2026-01-07 14:15:21,134 - src.utils - INFO - Цена акции AMZN получена
+2026-01-07 14:15:23,334 - src.utils - INFO - Цена акции GOOGL получена
+2026-01-07 14:15:23,334 - src.utils - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-07 16:43:44,368 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:43:44,368 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:44:51,804 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:44:51,804 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:45:47,758 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:45:47,758 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:46:52,751 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:46:52,751 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:46:53,331 - __main__ - INFO - Формирование данных по категориям кэшбэка
+2026-01-07 16:47:32,117 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:47:32,117 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:47:32,666 - __main__ - INFO - Формирование данных по категориям кэшбэка
+2026-01-07 16:49:01,050 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 16:49:01,050 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 16:49:01,610 - __main__ - INFO - Формирование данных по категориям кэшбэка
+2026-01-07 17:24:28,161 - __main__ - INFO - Запуск функции cashback_categories
+2026-01-07 17:24:28,161 - __main__ - INFO - Чтение Excel данных...
+2026-01-07 17:24:28,716 - __main__ - INFO - Формирование данных по категориям кэшбэка
+2026-01-07 17:28:52,570 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-07 17:28:52,570 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-07 17:28:53,159 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-07 17:28:53,159 - utils.py - INFO - Запуск функции tread_json
+2026-01-07 17:28:53,159 - utils.py - INFO - Чтение json файла... 
+2026-01-07 17:28:53,159 - utils.py - INFO - Работа функции read_json завершена без ошибок.
+2026-01-07 17:28:53,159 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-07 17:28:53,159 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-07 17:28:53,159 - utils.py - INFO - Запуск функции calculate_cards
+2026-01-07 17:28:53,159 - utils.py - INFO - Фильтрация данных...
+2026-01-07 17:28:53,161 - utils.py - INFO - Работа функции calculate_cards завершена без ошибок.
+2026-01-07 17:28:53,161 - utils.py - INFO - Запуск функции top_transaction
+2026-01-07 17:28:53,163 - utils.py - INFO - Фильтрация данных...
+2026-01-07 17:28:53,163 - utils.py - INFO - Работа функции top_transactions завершена без ошибок.
+2026-01-07 17:28:53,163 - utils.py - INFO - Запуск функции get_currency_rates
+2026-01-07 17:28:53,164 - utils.py - INFO - Отправка API запроса...
+2026-01-07 17:28:54,982 - utils.py - INFO - Данные валют USD,EUR,CNY получены
+2026-01-07 17:28:54,982 - utils.py - INFO - Фильтрация данных...
+2026-01-07 17:28:54,982 - utils.py - INFO - Работа функции get_currency_rates завершена без ошибок.
+2026-01-07 17:28:54,983 - utils.py - INFO - Запуск функции get_stock_price
+2026-01-07 17:28:54,984 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-07 17:28:56,632 - utils.py - INFO - Цена акции AAPL получена
+2026-01-07 17:28:57,220 - utils.py - INFO - Цена акции AMZN отсутствует
+2026-01-07 17:28:57,786 - utils.py - INFO - Цена акции GOOGL получена
+2026-01-07 17:28:57,786 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-07 17:29:05,110 - services.py - INFO - Запуск функции cashback_categories
+2026-01-07 17:29:05,110 - services.py - INFO - Чтение Excel данных...
+2026-01-07 17:29:05,685 - services.py - INFO - Формирование данных по категориям кэшбэка
+2026-01-07 17:29:05,688 - services.py - INFO - Формирование json файла

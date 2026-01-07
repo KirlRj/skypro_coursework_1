@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 dir = Path(__file__).resolve().parent.parent
 log_path = dir / "log.txt"
-utils_logger = logging.getLogger(__name__)
+utils_logger = logging.getLogger("utils.py")
 utils_logger.setLevel(logging.DEBUG)
 utils_handler = logging.FileHandler(log_path, mode="a", encoding="utf-8")
 utils_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
