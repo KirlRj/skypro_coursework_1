@@ -5,6 +5,8 @@ from typing import Dict
 
 import pandas as pd
 
+from src.utils import read_excel_by_date
+
 dir = Path(__file__).resolve().parent.parent
 log_path = dir / "log.txt"
 services_logger = logging.getLogger("services.py")
@@ -20,12 +22,7 @@ def cashback_categories(file_path: str, year: int, month: int) -> str:
 
     services_logger.info("Запуск функции cashback_categories")
 
-    try:
-        services_logger.info("Чтение Excel данных...")
-        data_file = pd.read_excel(file_path)
-    except Exception:
-        services_logger.exception("Ошибка при чтении Excel файла")
-        raise
+    data_file = read_excel_by_date(file_path)
 
     r_columns = {"Дата платежа", "Кэшбэк", "Категория"}
     if not r_columns.issubset(data_file.columns):

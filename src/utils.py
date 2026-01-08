@@ -38,17 +38,22 @@ def get_greeting(dt: datetime) -> str:
         return "Доброй ночи"
 
 
-def read_excel_by_date(file_path: str, in_date: str, sheet_name: int = 0) -> pd.DataFrame:
-    """Функция считывает Excel-файл по дате"""
+def read_excel_by_date(file_path: str, in_date: str | None = None, sheet_name: int = 0) -> pd.DataFrame:
+    """Функция считывает Excel-файл по дате. Если даты нет, берет текущую."""
     utils_logger.info("Запуск функции read_excel_by_date ")
-
-    end_date = datetime.strptime(in_date, "%Y-%m-%d %H:%M:%S")
-    start_date = end_date.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
 
     try:
         utils_logger.info("Чтение данных из excel файла...")
         excel_data = pd.read_excel(file_path, sheet_name=sheet_name)
         excel_data["Дата операции"] = pd.to_datetime(excel_data["Дата операции"], format="%d.%m.%Y %H:%M:%S")
+
+        if in_date is None:
+            utils_logger.info("Дата не передана. Возвращаем весь файл.")
+            utils_logger.info("Работа функции read_excel_by_date завершена без ошибок.")
+            return excel_data
+
+        end_date = datetime.strptime(in_date, "%Y-%m-%d %H:%M:%S")
+        start_date = end_date.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
         filtered_excel_data = excel_data[
             (excel_data["Дата операции"] >= start_date) & (excel_data["Дата операции"] <= end_date)
         ]
