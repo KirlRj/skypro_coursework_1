@@ -1287,3 +1287,149 @@ requests.exceptions.RequestException
 2026-01-16 11:09:26,556 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
 2026-01-16 11:09:26,557 - utils.py - INFO - Цена акции AAPL отсутствует
 2026-01-16 11:09:26,557 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:32,276 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:32,276 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:32,276 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:32,937 - utils.py - INFO - Дата не передана. Возвращаем весь файл.
+2026-01-16 15:01:32,938 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:32,942 - services.py - INFO - Формирование данных по категориям кэшбэка
+2026-01-16 15:01:32,946 - services.py - INFO - Формирование json файла. Функция завершена без ошибок
+2026-01-16 15:01:32,955 - reports.py - INFO - Запуск функции spending_by_category
+2026-01-16 15:01:32,956 - reports.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:32,963 - reports.py - INFO - Запуск функции spending_by_category
+2026-01-16 15:01:32,965 - reports.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:32,968 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:32,969 - services.py - INFO - Формирование данных по категориям кэшбэка
+2026-01-16 15:01:32,970 - services.py - INFO - Формирование json файла. Функция завершена без ошибок
+2026-01-16 15:01:32,972 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:32,972 - services.py - ERROR - В файле отсутствуют колонки: {'Кэшбэк'}
+2026-01-16 15:01:32,973 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:32,974 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:32,974 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:32,974 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:32,975 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:32,975 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:32,976 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:32,976 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:32,977 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:32,977 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:32,977 - utils.py - INFO - Дата не передана. Возвращаем весь файл.
+2026-01-16 15:01:32,977 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:32,978 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:32,979 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:32,980 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:32,981 - utils.py - INFO - Запуск функции calculate_cards
+2026-01-16 15:01:32,981 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:32,982 - utils.py - INFO - Работа функции calculate_cards завершена без ошибок.
+2026-01-16 15:01:32,982 - utils.py - INFO - Запуск функции top_transaction
+2026-01-16 15:01:32,983 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:32,983 - utils.py - INFO - Работа функции top_transactions завершена без ошибок.
+2026-01-16 15:01:32,985 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:32,986 - utils.py - INFO - Чтение json файла... 
+2026-01-16 15:01:32,986 - utils.py - INFO - Работа функции read_json завершена без ошибок.
+2026-01-16 15:01:32,986 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:32,986 - utils.py - ERROR - Файл не найден
+2026-01-16 15:01:32,988 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:32,988 - utils.py - INFO - Чтение json файла... 
+2026-01-16 15:01:32,988 - utils.py - ERROR - Некорректный формат JSON файла
+2026-01-16 15:01:32,990 - utils.py - INFO - Запуск функции get_currency_rates
+2026-01-16 15:01:32,990 - utils.py - INFO - Отправка API запроса...
+2026-01-16 15:01:32,990 - utils.py - INFO - Данные валют USD получены
+2026-01-16 15:01:32,990 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:32,990 - utils.py - INFO - Работа функции get_currency_rates завершена без ошибок.
+2026-01-16 15:01:32,992 - utils.py - INFO - Запуск функции get_currency_rates
+2026-01-16 15:01:32,992 - utils.py - INFO - Отправка API запроса...
+2026-01-16 15:01:32,993 - utils.py - ERROR - Ошибка при получении курса валют
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\src\utils.py", line 150, in get_currency_rates
+    response = requests.get(api_url, params=params, headers=headers)
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+requests.exceptions.RequestException
+2026-01-16 15:01:32,996 - utils.py - INFO - Запуск функции get_stock_price
+2026-01-16 15:01:32,997 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-16 15:01:32,997 - utils.py - INFO - Цена акции AAPL получена
+2026-01-16 15:01:32,997 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:32,999 - utils.py - INFO - Запуск функции get_stock_price
+2026-01-16 15:01:32,999 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-16 15:01:32,999 - utils.py - INFO - Цена акции AAPL отсутствует
+2026-01-16 15:01:32,999 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:37,220 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:37,220 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:37,220 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:37,861 - utils.py - INFO - Дата не передана. Возвращаем весь файл.
+2026-01-16 15:01:37,861 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:37,866 - services.py - INFO - Формирование данных по категориям кэшбэка
+2026-01-16 15:01:37,871 - services.py - INFO - Формирование json файла. Функция завершена без ошибок
+2026-01-16 15:01:37,880 - reports.py - INFO - Запуск функции spending_by_category
+2026-01-16 15:01:37,881 - reports.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:37,890 - reports.py - INFO - Запуск функции spending_by_category
+2026-01-16 15:01:37,891 - reports.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:37,894 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:37,896 - services.py - INFO - Формирование данных по категориям кэшбэка
+2026-01-16 15:01:37,896 - services.py - INFO - Формирование json файла. Функция завершена без ошибок
+2026-01-16 15:01:37,897 - services.py - INFO - Запуск функции cashback_categories
+2026-01-16 15:01:37,898 - services.py - ERROR - В файле отсутствуют колонки: {'Кэшбэк'}
+2026-01-16 15:01:37,899 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:37,899 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:37,900 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:37,900 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:37,900 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:37,901 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:37,901 - utils.py - INFO - Запуск функции get_greeting 
+2026-01-16 15:01:37,901 - utils.py - INFO - Работа функции get_greeting завершена без ошибок.
+2026-01-16 15:01:37,902 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:37,902 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:37,903 - utils.py - INFO - Дата не передана. Возвращаем весь файл.
+2026-01-16 15:01:37,903 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:37,904 - utils.py - INFO - Запуск функции read_excel_by_date 
+2026-01-16 15:01:37,904 - utils.py - INFO - Чтение данных из excel файла...
+2026-01-16 15:01:37,905 - utils.py - INFO - Работа функции read_excel_by_date завершена без ошибок.
+2026-01-16 15:01:37,906 - utils.py - INFO - Запуск функции calculate_cards
+2026-01-16 15:01:37,906 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:37,907 - utils.py - INFO - Работа функции calculate_cards завершена без ошибок.
+2026-01-16 15:01:37,908 - utils.py - INFO - Запуск функции top_transaction
+2026-01-16 15:01:37,908 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:37,908 - utils.py - INFO - Работа функции top_transactions завершена без ошибок.
+2026-01-16 15:01:37,910 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:37,910 - utils.py - INFO - Чтение json файла... 
+2026-01-16 15:01:37,910 - utils.py - INFO - Работа функции read_json завершена без ошибок.
+2026-01-16 15:01:37,911 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:37,911 - utils.py - ERROR - Файл не найден
+2026-01-16 15:01:37,913 - utils.py - INFO - Запуск функции tread_json
+2026-01-16 15:01:37,913 - utils.py - INFO - Чтение json файла... 
+2026-01-16 15:01:37,913 - utils.py - ERROR - Некорректный формат JSON файла
+2026-01-16 15:01:37,915 - utils.py - INFO - Запуск функции get_currency_rates
+2026-01-16 15:01:37,916 - utils.py - INFO - Отправка API запроса...
+2026-01-16 15:01:37,916 - utils.py - INFO - Данные валют USD получены
+2026-01-16 15:01:37,916 - utils.py - INFO - Фильтрация данных...
+2026-01-16 15:01:37,916 - utils.py - INFO - Работа функции get_currency_rates завершена без ошибок.
+2026-01-16 15:01:37,918 - utils.py - INFO - Запуск функции get_currency_rates
+2026-01-16 15:01:37,918 - utils.py - INFO - Отправка API запроса...
+2026-01-16 15:01:37,918 - utils.py - ERROR - Ошибка при получении курса валют
+Traceback (most recent call last):
+  File "C:\Users\Kirill\Desktop\Learning\coursework_1\src\utils.py", line 150, in get_currency_rates
+    response = requests.get(api_url, params=params, headers=headers)
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+requests.exceptions.RequestException
+2026-01-16 15:01:37,922 - utils.py - INFO - Запуск функции get_stock_price
+2026-01-16 15:01:37,923 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-16 15:01:37,923 - utils.py - INFO - Цена акции AAPL получена
+2026-01-16 15:01:37,923 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.
+2026-01-16 15:01:37,924 - utils.py - INFO - Запуск функции get_stock_price
+2026-01-16 15:01:37,925 - utils.py - INFO - Отправка API запроса и фильтрация данных. Для каждой акции отдельный API запрос
+2026-01-16 15:01:37,925 - utils.py - INFO - Цена акции AAPL отсутствует
+2026-01-16 15:01:37,925 - utils.py - INFO - Работа функции get_stock_price завершена без ошибок.

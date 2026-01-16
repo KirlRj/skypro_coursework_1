@@ -20,7 +20,7 @@ utils_logger.addHandler(utils_handler)
 
 
 def get_greeting(dt: datetime) -> str:
-    """Функция определения приветствия и формирования списка словарей"""
+    """Функция определения приветствия"""
     utils_logger.info("Запуск функции get_greeting ")
     hour = dt.hour
 
@@ -65,7 +65,7 @@ def read_excel_by_date(file_path: str, in_date: str | None = None, sheet_name: i
 
 
 def calculate_cards(df: pd.DataFrame) -> List[Dict[str, Any]]:
-    """Функция считающая сумму и кэшбэк и выводит список словарей"""
+    """Функция считающая сумму и кэшбэк"""
     utils_logger.info("Запуск функции calculate_cards")
 
     cards = []
@@ -86,7 +86,7 @@ def calculate_cards(df: pd.DataFrame) -> List[Dict[str, Any]]:
 
 
 def top_transactions(df: pd.DataFrame, count_tr: int = 5) -> List[Dict[str, str]]:
-    """Возвращает топ транзакций по абсолютной сумме платежа. По умолчанию 5"""
+    """Функция возвращает топ транзакций (по умолчанию 5) по абсолютной сумме платежа."""
     utils_logger.info("Запуск функции top_transaction")
 
     top_count = df.iloc[df["Сумма платежа"].abs().argsort()[::-1]].head(count_tr)
@@ -107,7 +107,7 @@ def top_transactions(df: pd.DataFrame, count_tr: int = 5) -> List[Dict[str, str]
 
 
 def read_json(filename: Path | str) -> Dict[str, Any]:
-    """функция читает json файл. Если есть ошибки, то выводит пустой файл"""
+    """Функция читает json файл. Если есть ошибки, то выводит пустой файл"""
     utils_logger.info("Запуск функции tread_json")
 
     try:
