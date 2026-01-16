@@ -18,6 +18,3 @@ def structure_data(in_date: str) -> str:
     }
     json_data = json.dumps(data, ensure_ascii=False, indent=2)
     return json_data
-
-
-print(structure_data("2020-01-19 10:50:55"))

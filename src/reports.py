@@ -5,8 +5,6 @@ from typing import Any
 
 import pandas as pd
 
-from src.utils import read_excel_by_date
-
 dir = Path(__file__).resolve().parent.parent
 log_path = dir / "log.txt"
 reports_logger = logging.getLogger("reports.py")
@@ -41,6 +39,8 @@ def save_report(filename: Any) -> Any:
 
 @save_report(filename=None)
 def spending_by_category(transactions: pd.DataFrame, category: str, date: str | None = None) -> pd.DataFrame:
+    """Функция, формирующая отчет по категории"""
+
     reports_logger.info("Запуск функции spending_by_category")
     end_date = pd.to_datetime(date, dayfirst=True) if date else pd.Timestamp.now()
     start_date = end_date - pd.DateOffset(months=3)
@@ -49,12 +49,3 @@ def spending_by_category(transactions: pd.DataFrame, category: str, date: str | 
     df["Дата платежа"] = pd.to_datetime(df["Дата платежа"], errors="coerce", dayfirst=True)
     reports_logger.info("Работа функции get_stock_price завершена без ошибок.")
     return df[(df["Категория"] == category) & (df["Дата платежа"] >= start_date) & (df["Дата платежа"] <= end_date)]
-
-
-print(
-    spending_by_category(
-        read_excel_by_date(r"C:\Users\Kirill\Desktop\Learning\coursework_1\data\operations.xlsx"),
-        "Супермаркеты",
-        "25.12.2020",
-    )
-)
